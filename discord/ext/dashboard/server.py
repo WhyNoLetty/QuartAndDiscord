@@ -89,5 +89,5 @@ class Server:
     
     def start(self):
         server_coro = asyncio.start_server(self.client_connection_callback, "localhost", self.port, loop=self.loop)
-        self.bot.dispatch("on_dash_ready")
+        self.bot.dispatch("dash_ready")
         self.loop.run_until_complete(server_coro)
