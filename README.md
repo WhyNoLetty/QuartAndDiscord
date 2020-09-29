@@ -41,6 +41,7 @@ async def get_guild_count(data):
 if __name__ == "__main__":
     dashboard.start()
     bot.run("Seu token")
+```
 
 ```py
 # WEB SERVER FILE
